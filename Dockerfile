@@ -1,7 +1,5 @@
-FROM debian:jessie
+FROM alpine:edge
 
-RUN apt-get update && \
-	apt-get install -y --no-install-recommends open-vm-tools && \
-	rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache open-vm-tools
 
 CMD ["/usr/bin/vmtoolsd"]
