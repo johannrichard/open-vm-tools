@@ -16,13 +16,13 @@ $ docker run -d --net=host --privileged --restart=always jbacic/open-vm-tools
 
 You can also run (with approx `45 MB` much smaller) containers based on [Alpine Linux](https://alpinelinux.org) with the following versions:
 
-* `alpine` -- Dockerfile based on the current stable [`latest`](https://hub.docker.com/_/alpine/) Alpine Image
-* `alpine-edge`  -- Dockerfile based on the current stable [`edge`](https://hub.docker.com/_/alpine/) Alpine Image
+* `alpine` - Dockerfile based on the current stable [`latest`](https://hub.docker.com/_/alpine/) Alpine Image
+* `alpine-edge`  - Dockerfile based on the current stable [`edge`](https://hub.docker.com/_/alpine/) Alpine Image
 
 ```console
 $ docker run -d --net=host --privileged --restart=always jbacic/open-vm-tools:alpine
 ```
-
+or
 ```console
 $ docker run -d --net=host --privileged --restart=always jbacic/open-vm-tools:alpine-edge
 ```
